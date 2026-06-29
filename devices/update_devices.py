@@ -32,7 +32,7 @@ def main():
     # Fetch OTA branches
     print("Fetching OTA branches...")
     response = requests.get(
-        "https://api.github.com/repos/Evolution-X/OTA/branches", headers=base_headers
+        "https://api.github.com/repos/Evolution-X-OnePlus-15/OTA/branches", headers=base_headers
     )
     if response.status_code != 200:
         print_error("Error: Failed to fetch OTA branch data.")
@@ -54,7 +54,7 @@ def main():
     # Fetch devices for each branch on OTA
     for branch in branches:
         print(f"Fetching devices on {branch}...")
-        url = f"https://api.github.com/repos/Evolution-X/OTA/contents/builds?ref={branch}"
+        url = f"https://api.github.com/repos/Evolution-X-OnePlus-15/OTA/contents/builds?ref={branch}"
         devices_response = requests.get(url, headers=base_headers)
 
         if devices_response.status_code != 200:

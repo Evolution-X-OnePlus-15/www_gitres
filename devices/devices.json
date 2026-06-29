@@ -1,5 +1,12 @@
 [
   {
+    "codename": "infiniti",
+    "branches": [
+      "bka",
+      "bka-vanilla"
+    ]
+  },
+  {
     "codename": "LH7n",
     "branches": [
       "bka",
